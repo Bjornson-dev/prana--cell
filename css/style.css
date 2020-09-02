@@ -48,7 +48,7 @@ a {
 }
 
 main {
-  padding-top: 100px;
+  padding-top: 85px;
 }
 
 /* Стиль Выпадающей Кнопки */
@@ -59,7 +59,7 @@ main {
   padding: 0 15px;
   border: none;
   cursor: pointer;
-  height: 30px;
+  height: 25px;
   position: relative;
   font-family: "PT Sans";
 }
@@ -125,7 +125,7 @@ main {
 .text {
   padding-bottom: 30px;
   color: #666;
-  font-size: 18px;
+  font-size: 16px;
   font-weight: 300;
 }
 
@@ -134,7 +134,7 @@ main {
 }
 
 .text .container {
-  width: 60%;
+  width: 70%;
   margin: 0 auto;
 }
 
@@ -275,6 +275,199 @@ textarea::-webkit-scrollbar-corner {
 
 textarea::-webkit-resizer {
   display: none;
+}
+
+.about__card {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  margin-bottom: 30px;
+  background-color: #eee;
+  border: 3px solid #ccc;
+}
+
+.about__card p {
+  padding: 20px;
+}
+
+.about__card img {
+  margin-right: 15px;
+  max-width: 40%;
+}
+
+.about__float {
+  display: block;
+}
+
+.about__float img {
+  float: left !important;
+}
+
+.about__card-3 img {
+  width: 30%;
+}
+
+.back-call {
+  background-color: #43326d;
+  font-family: "PT Sans";
+  padding: 30px;
+}
+
+.back-call .container {
+  text-align: center;
+  font-size: 20px;
+  color: white;
+}
+
+.back-call .container button {
+  display: block;
+  font-family: "PT Sans";
+  margin: 10px auto 0;
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 160, 169, 0.9);
+  border: 3px solid #00b0b9;
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.back-call .container button:hover {
+  background-color: rgba(0, 160, 169, 0.7);
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 10;
+}
+
+.modal .overlay {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+}
+
+.modal .modalWrapper {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 60vw;
+  height: 60vh;
+  background-color: #ffffff;
+  margin: auto;
+  z-index: 5;
+}
+
+.modal .closeModal {
+  position: absolute;
+  right: 15px;
+  top: 0px;
+  font-size: 50px;
+  line-height: 50px;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  -webkit-transform: rotateZ(45deg);
+      -ms-transform: rotate(45deg);
+          transform: rotateZ(45deg);
+}
+
+.modal .closeModal:focus {
+  outline: none;
+}
+
+.modal .form__field {
+  font-family: inherit;
+  color: #000 !important;
+}
+
+.modal .form__group {
+  position: relative;
+  padding: 15px 30px 0 0;
+  margin-top: 10px;
+  display: block;
+  margin: 0 auto;
+  color: #fff !important;
+}
+
+.modal #formModal {
+  width: 50%;
+  background-color: #eee;
+  padding: 30px;
+}
+
+.modal #formModal button {
+  display: block;
+  font-family: "PT Sans";
+  margin: 20px 0 0;
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 160, 169, 0.9);
+  border: 3px solid #00b0b9;
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.modal #formModal button:hover {
+  background-color: rgba(0, 160, 169, 0.7);
+}
+
+.modal .modalWrapper .contact {
+  width: 50%;
+  padding: 30px;
+}
+
+.modal .modalWrapper .contact a {
+  color: black !important;
+}
+
+.show {
+  display: block;
 }
 
 /* Slider */
@@ -582,7 +775,7 @@ textarea::-webkit-resizer {
 .header__top {
   width: 100%;
   background-color: #43326d;
-  height: 30px;
+  height: 25px;
 }
 
 .header__top .container {
@@ -602,7 +795,7 @@ textarea::-webkit-resizer {
   text-decoration: none;
   font-size: 14px;
   font-family: "PT Sans";
-  height: 30px;
+  height: 25px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -628,7 +821,7 @@ textarea::-webkit-resizer {
 }
 
 .header__bottom {
-  height: 70px;
+  height: 60px;
   background-color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -681,12 +874,12 @@ textarea::-webkit-resizer {
 }
 
 .f-screen {
-  height: calc(100vh - 100px);
+  height: calc(90vh - 100px);
   width: 100%;
 }
 
 .slider-f {
-  height: 80vh;
+  height: 70vh;
 }
 
 .slider-item-1 {
@@ -702,13 +895,14 @@ textarea::-webkit-resizer {
 }
 
 .slider-item {
-  height: 80vh;
+  height: 70vh;
   padding-left: 60px;
   display: -webkit-box !important;
   display: -ms-flexbox !important;
   display: flex !important;
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
 }
 
 .slider-item .container {
@@ -890,7 +1084,7 @@ textarea::-webkit-resizer {
 }
 
 .contacts .form button:hover {
-  background-color: rgba(0, 223, 235, 0.85);
+  background-color: rgba(0, 176, 185, 0.85);
   color: white;
 }
 
