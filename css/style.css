@@ -277,6 +277,42 @@ textarea::-webkit-resizer {
   display: none;
 }
 
+.about__photo-1,
+.about__photo-2,
+.about__photo-3,
+.about__photo-4,
+.about__photo-5,
+.about__photo-6 {
+  width: 25%;
+  margin: 0;
+  padding: 0;
+  min-height: 300px;
+  height: auto;
+  background-image: url(../img/about-1.jpg);
+  background-position: center top;
+  background-size: cover;
+}
+
+.about__photo-2 {
+  background-image: url(../img/about-2.jpg);
+}
+
+.about__photo-3 {
+  background-image: url(../img/about-3.jpg);
+}
+
+.about__photo-4 {
+  background-image: url(../img/about-4.jpg);
+}
+
+.about__photo-5 {
+  background-image: url(../img/about-5.jpg);
+}
+
+.about__photo-6 {
+  background-image: url(../img/about-6.jpg);
+}
+
 .about__card {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -290,7 +326,9 @@ textarea::-webkit-resizer {
 }
 
 .about__card p {
-  padding: 20px;
+  width: 75%;
+  padding: 15px;
+  font-size: 1.1rem;
 }
 
 .about__card img {
@@ -302,6 +340,10 @@ textarea::-webkit-resizer {
   display: block;
 }
 
+.about__float p {
+  width: auto;
+}
+
 .about__float img {
   float: left !important;
 }
@@ -311,7 +353,7 @@ textarea::-webkit-resizer {
 }
 
 .back-call {
-  background-color: #43326d;
+  background-color: #0c4a63;
   font-family: "PT Sans";
   padding: 30px;
 }
@@ -468,6 +510,65 @@ textarea::-webkit-resizer {
 
 .show {
   display: block;
+}
+
+.clearfix {
+  display: block;
+  clear: both;
+}
+
+.mini-site .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 30px;
+}
+
+.mini-site .container p {
+  font-family: "Roboto Slab";
+}
+
+.mini-site .container a {
+  display: block;
+  font-family: "PT Sans";
+  margin: 20px 0 0;
+  height: 50px;
+  width: 200px;
+  background-color: rgba(0, 160, 169, 0.9);
+  border: 3px solid #00b0b9;
+  color: white;
+  font-size: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-transition: 0.3s;
+  -o-transition: 0.3s;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.mini-site .container a:hover {
+  background-color: rgba(0, 160, 169, 0.7);
+}
+
+.brashure__img {
+  width: 50%;
+  min-height: 300px;
+  background-image: url(../img/brashure.jpg);
+  background-position: center;
+  background-size: cover;
 }
 
 /* Slider */
@@ -774,7 +875,7 @@ textarea::-webkit-resizer {
 
 .header__top {
   width: 100%;
-  background-color: #43326d;
+  background-color: #01364a;
   height: 25px;
 }
 
@@ -822,7 +923,7 @@ textarea::-webkit-resizer {
 
 .header__bottom {
   height: 60px;
-  background-color: #fff;
+  background-color: #0c4a63;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -861,11 +962,12 @@ textarea::-webkit-resizer {
   -webkit-transition: 0.3s;
   -o-transition: 0.3s;
   transition: 0.3s;
+  color: #fff;
 }
 
 .header__nav a:hover, .header__nav a.active__nav {
-  color: #00a0a9;
-  border-bottom: 2px solid #835fd9;
+  color: #fff;
+  border-bottom: 2px solid #00b0b9;
 }
 
 .header__logo {
@@ -1019,7 +1121,7 @@ textarea::-webkit-resizer {
 }
 
 .contacts {
-  background-color: #333;
+  background-color: #0c4a63;
   color: #fff;
 }
 
