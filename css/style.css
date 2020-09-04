@@ -571,6 +571,90 @@ textarea::-webkit-resizer {
   background-size: cover;
 }
 
+@media (max-width: 768px) {
+  .text {
+    margin-top: 30px;
+  }
+  .text h2 {
+    font-size: 22px;
+  }
+  .text .container {
+    width: 90%;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .mini-site .container {
+    width: 95%;
+  }
+  .mini-site .container div {
+    width: 95%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    text-align: center;
+  }
+  .mini-site .container .brashure__img {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    min-height: 250px;
+  }
+  .mini-site .container a {
+    margin: 20px auto;
+  }
+  .modal .modalWrapper {
+    width: 95vw;
+    height: 95vh;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .modal .modalWrapper #formModal {
+    height: 50%;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .modal .modalWrapper #formModal .form__left {
+    width: 50%;
+  }
+  .modal .modalWrapper #formModal .form__right {
+    width: 50%;
+  }
+  .modal .modalWrapper #formModal .form__right .button {
+    width: 100%;
+    height: 40px;
+    margin-top: 11px;
+  }
+  .modal .modalWrapper #formModal .form__right textarea {
+    height: 95px !important;
+  }
+  .modal .modalWrapper .contact {
+    width: 100%;
+    text-align: center;
+  }
+  .about__card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .about__card img {
+    max-width: 100%;
+    width: 100%;
+  }
+  .about__card p {
+    width: 95%;
+  }
+}
+
 /* Slider */
 .slick-slider {
   position: relative;
@@ -930,6 +1014,7 @@ textarea::-webkit-resizer {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .header__bottom .container {
@@ -973,6 +1058,67 @@ textarea::-webkit-resizer {
 .header__logo {
   width: 15%;
   display: block;
+}
+
+.header-close {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  .header__nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    position: absolute;
+    width: 100%;
+    top: 55px;
+    right: 0;
+    background-color: #0c4a63;
+    height: 0;
+    z-index: 10;
+    overflow: hidden;
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
+    transition: 0.3s;
+  }
+  .header__nav.active {
+    height: 350px;
+  }
+  .header__nav li {
+    height: 50px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .header-toggle-m {
+    display: block;
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+        -ms-transform: translateY(-50%);
+            transform: translateY(-50%);
+    z-index: 20;
+    width: 24px;
+    height: 24px;
+    border: none;
+    background-color: transparent;
+    background-image: url(../img/open-menu.svg);
+    background-size: cover;
+  }
+  .header-toggle-m:focus {
+    outline: none;
+  }
+  .header-toggle-m.active {
+    background-image: url(../img/close-menu.svg);
+  }
+  .header__logo {
+    width: 40%;
+  }
 }
 
 .f-screen {
@@ -1196,4 +1342,65 @@ textarea::-webkit-resizer {
 
 .contacts .contact img {
   width: 200px;
+}
+
+@media (max-width: 768px) {
+  .f-screen {
+    width: 100%;
+  }
+  .slider-item {
+    padding-left: 0;
+  }
+  .slider-item .container {
+    margin: auto;
+    padding-left: 0;
+    padding-right: 0;
+    width: -webkit-fit-content;
+    width: -moz-fit-content;
+    width: fit-content;
+    max-width: 250px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .slider-item .container p {
+    font-size: 18px;
+    text-align: center;
+  }
+  .card {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .card img {
+    width: 100% !important;
+    margin-bottom: 20px;
+  }
+  .contacts .container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .contacts .contact {
+    width: 100%;
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+  .contacts .form {
+    width: 100%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    margin-bottom: 30px;
+  }
 }

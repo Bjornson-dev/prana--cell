@@ -23,6 +23,10 @@ $(document).ready(function () {
   $(".closeModal").click(() => {
     $(".modal").removeClass("show");
   })
+  $(".header-toggle-m").click(() => {
+    $(".header-toggle-m").toggleClass("active");
+    $(".header__nav").toggleClass("active");
+  })
   jQuery(function ($) {
     $(document).mouseup(function (e) {
       var div = $(".modalWrapper");
